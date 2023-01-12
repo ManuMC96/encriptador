@@ -28,9 +28,9 @@ header{
 .mensaje{
     position: absolute;
     width: 577px;
-    height: 600px;
+    height: 400px;
     left: 300px;
-    top: 168px;
+    top: 150px;
     float: left;
   
     border: none;
@@ -45,15 +45,15 @@ header{
 .right{
     position: absolute;
     width: 400px;
-    height: 930px;
-    left: 1280px;
-    top: 40px;
+    height: 750px;
+    left: 1000px;
+    top: 25px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 #munheco{
-   margin-top: 55%;
+   margin-top: 25%;
    margin-left: 5%;
    width: 90%;
    height: auto;
@@ -78,7 +78,7 @@ header{
 }
 #resultado{
     width: 330px;
-    height: 200px;
+    height: 150px;
 
     margin-top: 16px;
     margin-left: 10%;
@@ -108,7 +108,7 @@ header{
     width: 680px;
     height: 67px;
     left: 300px;
-    top: 800px;
+    top: 650px;
 
     background:none;
 
@@ -186,6 +186,6 @@ header{
 
 .footer{
     position: absolute;
-    top: 95%;
+    top: 97%;
     left: 600px;
 }

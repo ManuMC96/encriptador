@@ -35,38 +35,13 @@ function encriptar(){
    
 }
 
-/*function encriptar(){
-
-    var mensaje = inputMensaje.value.toString();
-    let validacion = /[0-9\A-Z\!|@|#|$|%|^|&|*|(|)|_|+|-|=|?|<|>|,|.|;|:|'|"|~|á|é|í|ó|ú]/g;
-    console.log(validacion.test(mensaje));
-    var val1 = mensaje.match(validacion);
-    console.log(val1);
-    console.log(validacion.exec(mensaje));
-    
-    var mensajeEncriptado = mensaje
-    .replaceAll("e","enter")
-    .replaceAll("i","imes")
-    .replaceAll("o","ober")
-    .replaceAll("a","ai")
-    .replaceAll("u","ufat");
-    console.log(mensajeEncriptado);
-
-    document.getElementById("munheco").style.display = "none";
-    document.getElementById("text1").style.display = "none";
-
-    document.getElementById("botonCopiar").style.visibility = "visible";
-    
-    
-    inputResultado.value = mensajeEncriptado;
-}*/
 function desencriptar(){
 
 
     var mensajeEncriptado = inputMensaje.value.toString();
     const validacion = new RegExp('[^a-z ]');
     console.log(validacion);
-    if (!(validacion.test(mensaje))){
+    if (!(validacion.test(mensajeEncriptado))){
 
         var mensajeDesencriptado = mensajeEncriptado
         .replaceAll("enter","e")
