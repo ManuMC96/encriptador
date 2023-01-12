@@ -1,12 +1,12 @@
+//inputs
 const inputMensaje = document.querySelector("#mensaje");
 const inputResultado = document.querySelector("#resultado");
-
+//botones
 const btnEncriptar = document.querySelector("#Encriptar");
 const btnDesencriptar = document.querySelector("#Desencriptar");
 const btnCopiar = document.querySelector("#botonCopiar")
 
 function encriptar(){
-
     var mensaje = inputMensaje.value.toString();
     const validacion = new RegExp('[^a-z ]');
     console.log(validacion);
@@ -24,7 +24,6 @@ function encriptar(){
         document.getElementById("text1").style.display = "none";
 
         document.getElementById("botonCopiar").style.visibility = "visible";
-    
     
         inputResultado.value = mensajeEncriptado;
         
@@ -53,7 +52,6 @@ function desencriptar(){
         document.getElementById("munheco").style.display = "none";
         document.getElementById("text1").style.display = "none";
     
-        
         document.getElementById("botonCopiar").style.visibility = "visible";
     
         inputResultado.value = mensajeDesencriptado.toLowerCase();
@@ -66,14 +64,6 @@ function desencriptar(){
 }
 
 function copy() {
-
-    /*var contenido = document.querySelector("#resultado");
-    contenido.select();
-    document.execCommand("copy");
-    alert("Se copio el texto")
-    inputMensaje.value = "";
-    inputMensaje.focus();
-    */
     var contenido = document.querySelector("#resultado").value;
     navigator.clipboard.writeText(contenido).then(()=>  {
 
