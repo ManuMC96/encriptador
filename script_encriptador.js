@@ -30,7 +30,7 @@ function encriptar(){
         
     }
     else{
-        alert("No se permiten mayusculas, números ni caracteres especiales")
+        alert("No se permiten mayúsculas, números ni caracteres especiales")
     }
    
 }
@@ -60,19 +60,27 @@ function desencriptar(){
     }
     else{
 
-        alert("No se permiten mayusculas, números ni caracteres especiales")
+        alert("No se permiten mayúsculas, números ni caracteres especiales")
     }
 
 }
 
 function copy() {
 
-    var contenido = document.querySelector("#resultado");
+    /*var contenido = document.querySelector("#resultado");
     contenido.select();
     document.execCommand("copy");
     alert("Se copio el texto")
     inputMensaje.value = "";
     inputMensaje.focus();
+    */
+    var contenido = document.querySelector("#resultado").value;
+    navigator.clipboard.writeText(contenido).then(()=>  {
+
+        alert("Se copio el texto");
+        inputMensaje.value = "";
+        inputMensaje.focus();
+    })
 }
 
 btnEncriptar.onclick = encriptar;
